@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Nick Jennings <nick@silverbucket.net> -- developer -- @slvrbckt irc:nkj
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JavaScript
+
