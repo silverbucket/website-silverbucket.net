@@ -96,6 +96,7 @@ textarea {
 
 body {
     background-color: #f4f4f4;
+    font-family: 'iABCRegular', Georgia, serif;
 }
 
 div#container {
@@ -205,6 +206,7 @@ div.heading_text {
 
 
 h1 {
+    font-family: 'iABCRegular', Georgia, serif;
     font-size: 17px;
     text-transform: capitalize;
     color: #505050;
@@ -216,13 +218,16 @@ h1 {
     }
 
 h1#tagline {
-    margin-left: 330px;
+    font-family: 'iABCRegular', Georgia, serif;
+    margin: 0px 0px 0px 330px;
+    padding: 25px 0px 0px 25px;
 }
 
 h2 { 
+    font-family: 'iABCRegular', Georgia, serif;
     font-size: 14px;
     margin-right: 60px;
-    text-transform: uppercase;
+    /*text-transform: uppercase; */
     color: white; /*#505050;*/
     font-weight: bold;
     white-space: nowrap;
@@ -231,6 +236,7 @@ h2 {
     }
 
 h3 { 
+    font-family: 'iABCRegular', Georgia, serif;
     font-size: 13px;
     margin: 25px auto 0px auto;
     text-transform: uppercase;
