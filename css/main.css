@@ -173,7 +173,37 @@ aside {
     width: 120px;
     margin: 5px 120px auto 0px;
 }
-
+div#github-commits {
+    width: 240px;
+    margin-left: 0px;
+    padding: 0px;
+    font-size: 0.8em;
+    color: #7a787a;
+}
+div#github-commits a {
+    color: #55c3e8;
+}
+div#github-commits p.github-commits-widget-by {
+    font-size: 0.7em;
+    padding: 0px;
+    margin: -5px 0px 0px 10px;
+}
+div#github-commits ul {
+    padding: 10px 0px 0px 8px;
+}
+div#github-commits li {
+    border-bottom: 1px solid #DFDFDF;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+div#github-commits li.github-list-end {
+    border: 0px;
+}
+h3#github-commits-header {
+    width: 100%;
+    margin: 10px 0px 0px 10px;
+    padding-right: 10px;
+}
 
 
 div.heading {
