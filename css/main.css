@@ -196,7 +196,7 @@ div#github-commits li {
     margin-bottom: 5px;
     padding-bottom: 5px;
 }
-div#github-commits li.github-list-end {
+div#github-commits li.last, div#github-commits li:last-child {
     border: 0px;
 }
 h3#github-commits-header {
