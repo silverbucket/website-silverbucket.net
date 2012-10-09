@@ -122,9 +122,9 @@ a.button {
     font-size: 17px;
     padding: 5px 8px 5px 8px;
     text-align: center;
-    border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
+    border-radius: 10px;
     border: 1px solid #1589FF;
     text-decoration: none;
     color: #505050;
@@ -137,26 +137,22 @@ a.button:visited {
 }
 
 div#logo {
-    display: inline-block;
-    padding: 0px;
+    padding: 0;
     width: 318px;
     height: 71px;
     float:left;
     position: fixed;
+    background: url("/img/silverbucket_logo.png") center left no-repeat;
 }
 
 div#content {
     display: inline-block;
     background-color: white;
-    margin: 8px 0px 0px 35px;
+    margin: 8px 0 0 35px;
     width: 860px;
     min-height: 500px;
     border: 1px solid #d2d2d2;
     padding: 10px 25px 25px 25px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 10px;
     -webkit-border-top-left-radius: 10px;
     -webkit-border-top-right-radius: 2px;
     -webkit-border-bottom-left-radius: 2px;
@@ -165,18 +161,22 @@ div#content {
     -moz-border-radius-topright: 2px;
     -moz-border-radius-bottom-left: 2px;
     -moz-border-radius-bottomright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 10px;
 }
 
+
 aside {
-    display: inline-block;
     float: right;
     width: 120px;
-    margin: 5px 120px auto 0px;
+    margin: 5px 120px auto 0;
 }
 div#github-commits {
     width: 240px;
-    margin-left: 0px;
-    padding: 0px;
+    margin-left: 0;
+    padding: 0;
     font-size: 0.8em;
     color: #7a787a;
 }
@@ -185,11 +185,11 @@ div#github-commits a {
 }
 div#github-commits p.github-commits-widget-by {
     font-size: 0.7em;
-    padding: 0px;
-    margin: -5px 0px 0px 10px;
+    padding: 0;
+    margin: -5px 0 0 10px;
 }
 div#github-commits ul {
-    padding: 10px 0px 0px 8px;
+    padding: 10px 0 0 8px;
 }
 div#github-commits li {
     border-bottom: 1px solid #DFDFDF;
@@ -197,11 +197,11 @@ div#github-commits li {
     padding-bottom: 5px;
 }
 div#github-commits li.last, div#github-commits li:last-child {
-    border: 0px;
+    border: 0;
 }
 h3#github-commits-header {
     width: 100%;
-    margin: 10px 0px 0px 10px;
+    margin: 10px 0 0 10px;
     padding-right: 10px;
 }
 
@@ -215,10 +215,6 @@ div.stripe {
     background-color: #F88017; /*rgba(248, 128, 23, 1);*/
     margin-left: -75px;
     width: 295px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 10px;
     -webkit-border-top-left-radius: 10px;
     -webkit-border-top-right-radius: 2px;
     -webkit-border-bottom-left-radius: 2px;
@@ -227,6 +223,10 @@ div.stripe {
     -moz-border-radius-topright: 2px;
     -moz-border-radius-bottom-left: 2px;
     -moz-border-radius-bottomright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 10px;
 }
 div.heading_text {
     margin-left: 75px;
@@ -244,16 +244,15 @@ h1 {
     padding-top: 20px;
     white-space: nowrap;
     overflow: hidden;
-    font-family: sans-serif;
     }
 
 h1#tagline {
     font-family: 'iABCRegular', Georgia, serif;
-    margin: 0px 0px 0px 330px;
-    padding: 25px 0px 0px 25px;
+    margin: 0 0 0 330px;
+    padding: 25px 0 0 25px;
 }
 
-h2 { 
+h2 {
     font-family: 'iABCRegular', Georgia, serif;
     font-size: 14px;
     margin-right: 60px;
@@ -265,10 +264,10 @@ h2 {
     font-family: sans-serif;
     }
 
-h3 { 
+h3 {
     font-family: 'iABCRegular', Georgia, serif;
     font-size: 13px;
-    margin: 25px auto 0px auto;
+    margin: 25px auto 0 auto;
     text-transform: uppercase;
     color: #505050;
     font-weight: bold;
@@ -279,24 +278,24 @@ h3 {
 
 p.skills {
     color: #1589FF;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 
-ol, ul { 
-    list-style: none; 
-    margin-top: 0px;
+ol, ul {
+    list-style: none;
+    margin-top: 0;
 }
 p.a {
-    color: #1589FF; 
-    display: inline; 
+    color: #1589FF;
+    display: inline;
     font-weight: normal;
     }
 
 ul.icon_listing {
     margin-top: 10px;
     text-align: left;
-    padding: 0px auto auto 5px;
+    padding: 0 auto auto 5px;
     }
 ul.icon_listing li {
     padding: 5px 0 5px 25px;
@@ -304,22 +303,22 @@ ul.icon_listing li {
     font-size: 11px;
     color: #808080;
     }
-ul.icon_listing li.skype {
+ul.icon_listing .skype {
     background: url("/img/skype_16.png") center left no-repeat;
     }
-ul.icon_listing li.aim {
+ul.icon_listing .aim {
     background: url("/img/aim_16.png") center left no-repeat;
     }
-ul.icon_listing li.twitter {
+ul.icon_listing .twitter {
     background: url("/img/twitter_16.png") center left no-repeat;
     }
-ul.icon_listing li.email {
+ul.icon_listing .email {
     background: url("/img/email_16.png") center left no-repeat;
     }
-ul.icon_listing li.github {
+ul.icon_listing .github {
     background: url("/img/github_20.png") center left no-repeat;
     }
-ul.icon_listing li.bitbucket {
+ul.icon_listing .bitbucket {
     background: url("/img/bitbucket_16.png") center left no-repeat;
     }
 ul.icon_listing a {
@@ -339,7 +338,7 @@ ul.icon_listing i {
 
 div.display_icons {
     text-align: center;
-    margin: 10px 100px 0px 0px;
+    margin: 10px 100px 0 0;
 }
 div.display_icons a {
     margin: auto 30px auto 30px;
@@ -350,7 +349,7 @@ div.display_icons a {
 footer {
     display: block;
     height: 15px;
-    margin: 0px 0px 0px 35px;
+    margin: 0 0 0 35px;
     width: 910px;
     }
 #circle1, #circle2, #circle3 {
@@ -358,12 +357,12 @@ footer {
     line-height: .9;
     margin: 3px auto auto auto;
     background-color: #1589FF;
-    border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -o-border-radius: 8px;
     -icab-border-radius: 8px;
     -khtml-border-radius: 8px;
+    border-radius: 8px;
     }
 
 #circle1 {
@@ -494,6 +493,20 @@ footer {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+
+    header {
+        width: 100%;
+        display: block;
+    }
+
+    div#logo {
+        display:block;
+        margin: 0 auto 0 auto;
+        padding: 0;
+        width: 318px;
+        height: 71px;
+        background: url("/img/silverbucket_logo.png") center left no-repeat;
+    }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
