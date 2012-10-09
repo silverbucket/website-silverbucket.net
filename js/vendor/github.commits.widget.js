@@ -1,19 +1,19 @@
-(function ($) {
+(function($) {
 	function widget(element, options, callback) {
 		this.element = element;
 		this.options = options;
 		this.callback = $.isFunction(callback) ? callback : $.noop;
 	}
- 
+
 	widget.prototype = (function() {
 
-	    function getCommits(user, repo, branch, callback) {
-	        $.ajax({
-		        url: "https://api.github.com/repos/" + user + "/" + repo + "/commits?sha=" + branch,
-		        dataType: 'jsonp',
-		        success: callback
-	        });
-	    }
+		function getCommits(user, repo, branch, callback) {
+			$.ajax({
+				url: "https://api.github.com/repos/" + user + "/" + repo + "/commits?sha=" + branch,
+				dataType: 'jsonp',
+				success: callback
+			});
+		}
 
 		function _widgetRun(widget) {
 			if (!widget.options) {
@@ -26,8 +26,8 @@
 			var repo = widget.options.repo;
 			var branch = widget.options.branch;
 			var avatarSize = widget.options.avatarSize || 20;
-			var last = widget.options.last == undefined ? 0 : widget.options.last;
-			var limitMessage = widget.options.limitMessageTo == undefined ? 0 : widget.options.limitMessageTo;
+			var last = widget.options.last === undefined ? 0 : widget.options.last;
+			var limitMessage = widget.options.limitMessageTo === undefined ? 0 : widget.options.limitMessageTo;
 
 			element.append('<p>Widget intitalization, please wait...</p>');
 			getCommits(user, repo, branch, function (data) {
@@ -41,14 +41,14 @@
                     var commit = commits[c];
                     var li_elem = '<li>';
                     if (c === 0) {
-                    	li_elem = '<li class="first">';
+						li_elem = '<li class="first">';
                     } else if (c === totalCommits - 1) {
-                    	li_elem = '<li class="last">';
+						li_elem = '<li class="last">';
                     }
 					list.append(
 						li_elem +
-						' ' + ((commit.author != null) ? avatar(commit.author.gravatar_id, avatarSize) : '')+
-                        ' ' + ((commit.author != null) ? author(commit.author.login) : commit.commit.committer.name) +
+						' ' + ((commit.author !== null) ? avatar(commit.author.gravatar_id, avatarSize) : '')+
+                        ' ' + ((commit.author !== null) ? author(commit.author.login) : commit.commit.committer.name) +
 						' committed ' + message(commit.commit.message, commit.sha) +
 						' ' + when(commit.commit.committer.date) +
 						'</li>');
@@ -78,12 +78,11 @@
 					var todayTime = new Date().getTime();
 
 					var differenceInDays = Math.floor(((todayTime - commitTime)/(24*3600*1000)));
-					if (differenceInDays == 0) {
+					if (differenceInDays === 0) {
 						var differenceInHours = Math.floor(((todayTime - commitTime)/(3600*1000)));
-						if (differenceInHours == 0) {
+						if (differenceInHours === 0) {
 							var differenceInMinutes = Math.floor(((todayTime - commitTime)/(600*1000)));
-							if (differenceInMinutes == 0) {
-
+							if (differenceInMinutes === 0) {
 								return 'just now';
 							}
 
@@ -91,7 +90,7 @@
 						}
 
 						return 'about ' + differenceInHours + ' hours ago';
-					} else if (differenceInDays == 1) {
+					} else if (differenceInDays === 1) {
                         return 'yesterday';
                     }
 					return differenceInDays + ' days ago';
@@ -114,5 +113,4 @@
 		});
 		return this;
 	}
-
 })(jQuery);
