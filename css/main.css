@@ -89,35 +89,36 @@ textarea {
     padding: 0.2em 0;
 }
 
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 
+
+
 body {
     background-color: #f4f4f4;
     font-family: 'iABCRegular', Georgia, serif;
-}
-
+    }
 div#container {
     margin: 25px auto 60px 35px;
     text-align: left;
     width: 1200px;
-}
-
+    }
 header {
     height: 80px;
     width: 100%;
     display: block;
-}
-
+    }
 div#link-blog {
     position: relative;
     width: 120px;
     margin: -30px auto auto 970px;
     z-index: 100;
     font-family: sans-serif;
-}
+    }
 a.button {
     font-size: 17px;
     padding: 5px 8px 5px 8px;
@@ -128,14 +129,13 @@ a.button {
     border: 1px solid #1589FF;
     text-decoration: none;
     color: #505050;
-}
+    }
 a.button:hover {
     background-color: rgba(21, 137, 255, .1);
-}
+    }
 a.button:visited {
     color: #505050;
-}
-
+    }
 div#logo {
     padding: 0;
     width: 318px;
@@ -143,7 +143,7 @@ div#logo {
     float:left;
     position: fixed;
     background: url("/img/silverbucket_logo.png") center left no-repeat;
-}
+    }
 
 div#content {
     display: inline-block;
@@ -165,52 +165,50 @@ div#content {
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 10px;
-}
-
+    }
 
 aside {
     float: right;
     width: 120px;
     margin: 5px 120px auto 0;
-}
+    }
 div#github-commits {
     width: 240px;
     margin-left: 0;
     padding: 0;
     font-size: 0.8em;
     color: #7a787a;
-}
+    }
 div#github-commits a {
     color: #55c3e8;
-}
+    }
 div#github-commits p.github-commits-widget-by {
     font-size: 0.7em;
     padding: 0;
     margin: -5px 0 0 10px;
-}
+    }
 div#github-commits ul {
     padding: 10px 0 0 8px;
-}
+    }
 div#github-commits li {
     border-bottom: 1px solid #DFDFDF;
     margin-bottom: 5px;
     padding-bottom: 5px;
-}
+    }
 div#github-commits li.last, div#github-commits li:last-child {
     border: 0;
-}
+    }
 h3#github-commits-header {
-    width: 100%;
+    /*width: 100%;*/
     margin: 10px 0 0 10px;
     padding-right: 10px;
-}
-
+    }
 
 div.heading {
     margin: 40px auto auto auto;
     border-bottom: 1px solid black;
     width: 95%;
-}
+    }
 div.stripe {
     background-color: #F88017; /*rgba(248, 128, 23, 1);*/
     margin-left: -75px;
@@ -227,14 +225,12 @@ div.stripe {
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 10px;
-}
+    }
 div.heading_text {
     margin-left: 75px;
     display: block;
     width: 100%;
-}
-
-
+    }
 h1 {
     font-family: 'iABCRegular', Georgia, serif;
     font-size: 17px;
@@ -245,15 +241,15 @@ h1 {
     white-space: nowrap;
     overflow: hidden;
     }
-
-h1#tagline {
+#tagline h1 {
     font-family: 'iABCRegular', Georgia, serif;
     margin: 0 0 0 330px;
     padding: 25px 0 0 25px;
-}
-
+    }
+#tagline {
+    display: inline-block;
+    }
 h2 {
-    font-family: 'iABCRegular', Georgia, serif;
     font-size: 14px;
     margin-right: 60px;
     /*text-transform: uppercase; */
@@ -263,9 +259,7 @@ h2 {
     overflow: hidden;
     font-family: sans-serif;
     }
-
 h3 {
-    font-family: 'iABCRegular', Georgia, serif;
     font-size: 13px;
     margin: 25px auto 0 auto;
     text-transform: uppercase;
@@ -275,17 +269,14 @@ h3 {
     overflow: hidden;
     font-family: sans-serif;
     }
-
 p.skills {
     color: #1589FF;
     margin-top: 0;
-}
-
-
+    }
 ol, ul {
     list-style: none;
     margin-top: 0;
-}
+    }
 p.a {
     color: #1589FF;
     display: inline;
@@ -339,10 +330,10 @@ ul.icon_listing i {
 div.display_icons {
     text-align: center;
     margin: 10px 100px 0 0;
-}
+    }
 div.display_icons a {
     margin: auto 30px auto 30px;
-}
+    }
 
 
 
@@ -491,28 +482,105 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+/*@media only screen and (min-width: 30em) {
+    /* Style adjustments for viewports that meet the condition */
+/*}*/
+
+
+@media only screen and (max-width: 1100px) {
+    div#container {
+        min-width: 900px;
+    }
+    aside {
+        display: none;
+        /*text-align: center;
+        float: none;
+        position: relative;
+        display: inline-none;
+        z-index: -100;
+        margin-left: 50px;*/
+    }
+    div#github-commits {
+        display: inline-block;
+    }
+    div#twtr-widget-1 {
+        display: inline-block;
+    }
+    div#link-blog {
+        margin: -20px auto 0 800px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
     /* Style adjustments for viewports that meet the condition */
 
     body {
         width: 100%;
     }
-    aside {
-        display: none;
+    div#container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        min-width: 250px;
     }
     header {
         width: 100%;
-        display: block;
+        display: inline-block;
+        text-align: center;
+        height: 100%; /*145px;*/
+        vertical-align: top;
+        min-width: 300px;
     }
 
     div#logo {
         position: relative;
-        display:block;
-        margin: 0 auto 0 auto;
+        float: none;
+        display: inline-block;
+        margin: 0 auto 10px auto;
         padding: 0;
         width: 318px;
         height: 71px;
-        background: url("/img/silverbucket_logo.png") center left no-repeat;
+    }
+    div#tagline {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: top;
+        margin: 10px 0 10px 0;
+    }
+    div#tagline h1 {
+        margin: 0;
+        padding: 0;
+    }
+    div#link-blog {
+        display: none;
+    }
+
+
+    aside {
+        /*text-align: center;
+        float: none;
+        position: relative;
+        display: inline-none;*/
+        display: none;
+    }
+    div#github-commits {
+        display: inline-block;
+    }
+    div#twtr-widget-1 {
+        display: inline-block;
+    }
+    div#content {
+        min-width: 250px;
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        min-width: 250px;
+        display: inline-block;
+        border: 1px dashed red;
+        margin: 0 5px 0 5px;
     }
 }
 
