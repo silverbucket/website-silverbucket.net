@@ -494,12 +494,19 @@ footer {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 
+    body {
+        width: 100%;
+    }
+    aside {
+        display: none;
+    }
     header {
         width: 100%;
         display: block;
     }
 
     div#logo {
+        position: relative;
         display:block;
         margin: 0 auto 0 auto;
         padding: 0;
