@@ -579,7 +579,6 @@ footer {
     section {
         min-width: 250px;
         display: inline-block;
-        border: 1px dashed red;
         margin: 0 5px 0 5px;
     }
 }
