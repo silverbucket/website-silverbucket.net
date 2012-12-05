@@ -297,9 +297,9 @@ ul.icon_listing li {
 ul.icon_listing .skype {
     background: url("/img/skype_16.png") center left no-repeat;
     }
-ul.icon_listing .aim {
+/*ul.icon_listing .aim {
     background: url("/img/aim_16.png") center left no-repeat;
-    }
+    }*/
 ul.icon_listing .twitter {
     background: url("/img/twitter_16.png") center left no-repeat;
     }
@@ -320,12 +320,12 @@ ul.icon_listing a {
 ul.icon_listing a:hover {
     color: #B44003;
     }
-ul.icon_listing b {
+/*ul.icon_listing b {
     font-size: 13px;
     }
 ul.icon_listing i {
     color: #808080;
-    }
+    }*/
 
 div.display_icons {
     text-align: center;
