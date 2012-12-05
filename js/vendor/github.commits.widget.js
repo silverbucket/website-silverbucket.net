@@ -57,7 +57,7 @@
 				callback(element);
 
 				function avatar(hash, size) {
-					return '<img class="github-avatar" src="http://www.gravatar.com/avatar/' + hash + '?s=' + size + '"/>';
+					return '<img class="github-avatar" src="https://www.gravatar.com/avatar/' + hash + '?s=' + size + '"/>';
 				}
 
 				function author(login) {
