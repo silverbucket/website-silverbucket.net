@@ -328,15 +328,25 @@ ul.icon_listing i {
     color: #808080;
     }*/
 
+a {
+    color: #F88017;
+    font-weight: bold;
+    }
+a:hover {
+    color: #B44003;
+    }
+.github {
+    margin-left: 5px;
+}
+
 div.display_icons {
     text-align: center;
     margin: 10px 100px 0 0;
     }
 div.display_icons a {
     margin: auto 30px auto 30px;
+    display: inline-block;
     }
-
-
 
 footer {
     display: block;
