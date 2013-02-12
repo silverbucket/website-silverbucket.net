@@ -40,12 +40,12 @@
       <header>
         <div id="logo"></div>
         <div id="tagline"><h1>professional web application development</h1></div>
-        <div id="link-blog"><a class="button" href="http://blog.silverbucket.net" target="_blank">visit blog</a></div>
+        <div id="link-blog"><a class="button" about="#nick" rel="foaf:weblog" href="http://blog.silverbucket.net" target="_blank">visit blog</a></div>
       </header>
 
       <div id="content">
-        <section id="about">
-          <p>My name is <span about="#nick" property="foaf:name" instanceof="foaf:Person">Nick Jennings</span> and I am a freelance developer.</p>
+        <section id="about" rel="foaf:primaryTopic" about="#nick">
+          <p>My name is <span about="#nick" property="foaf:name" instanceof="foaf:Person">Nick Jennings</span> and I am a <span about="#nick" rel="foaf:title">freelance developer</span>.</p>
 
           <p>I build modern, interactive and standards-compliant websites, provide technical consulting, planning and insight. I specialize in web application development, scalability, systems administration, and project management. I write clean, cross-browser compatible, SEO friendly and standards compliant HTML and CSS.</p>
 
@@ -112,6 +112,7 @@
 
 
       <footer>
+	<a about="#nick" rel="foaf:homepage" href="silverbucket.net" />
         <div id="circle1"> &nbsp; </div>
         <div id="circle2"> &nbsp; </div>
         <div id="circle3"> &nbsp; </div>
