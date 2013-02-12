@@ -201,7 +201,7 @@ div#github-commits li.last, div#github-commits li:last-child {
     }
 h3#github-commits-header {
     /*width: 100%;*/
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 5px;
     padding-right: 10px;
     }
 
@@ -261,7 +261,7 @@ h2 {
     font-family: sans-serif;
     }
 h3 {
-    font-size: 13px;
+    font-size: 12px;
     margin: 25px auto 0 auto;
     text-transform: uppercase;
     color: #505050;
