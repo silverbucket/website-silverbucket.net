@@ -30,7 +30,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body xmlns:foaf="http://xmlns.com/foaf/0.1/">
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
     <![endif]-->
@@ -45,7 +45,7 @@
 
       <div id="content">
         <section id="about">
-          <p>My name is Nick Jennings and I am a freelance developer.</p>
+          <p>My name is <span about="#nick" property="foaf:name" instanceof="foaf:Person">Nick Jennings</span> and I am a freelance developer.</p>
 
           <p>I build modern, interactive and standards-compliant websites, provide technical consulting, planning and insight. I specialize in web application development, scalability, systems administration, and project management. I write clean, cross-browser compatible, SEO friendly and standards compliant HTML and CSS.</p>
 
@@ -77,7 +77,7 @@
           <p>My clients are internet businesses, entrepreneurs or other development teams. If you're in need of someone who can not only develop to spec, fix bugs, or add functionality, but can also help to plan the website architecure or make improvements and suggestions to existing infrastructure, please contact me with information about your project.</p>
 
           <ul class="icon_listing">
-            <li class="email"><a href="mailto:nick@silverbucket.net">nick<p class="a">@</p>silverbucket<p class="a">.</p>net</a></li>
+            <li class="email"><a about="#nick" rel="foaf:mbox" href="mailto:nick@silverbucket.net">nick<p class="a">@</p>silverbucket<p class="a">.</p>net</a></li>
             <li class="skype"><a href="skype:hurphendale?add">hurphendale</a></li>
             <li class="twitter"><a target="_blank" href="http://twitter.com/slvrbckt">slvrbckt</a></li>
           </ul>
@@ -95,24 +95,15 @@
 
           <h3>projects I am actively working on</h3>
           <div class="display_icons">
-            <a class="unhosted" href="http://unhosted.org/" target="_blank"><img src="img/unhosted_logo.png" width="266" height="100" alt="unhosted.org" /></a>
-            <a class="sockethub" href="http://sockethub.org" target="_blank"><img src="img/sockethub_logo.svg" width="182" height="60" alt="Sockethub"/></a>
-            <a class="remotestorage" href="http://remotestoragejs.com" target="_blank"><img src="img/remotestoragejs_logo.svg" width="113" height="61" alt="remoteStorage.js"/></a>
+            <a about="#nick" rel="foaf:Project" class="unhosted" href="http://unhosted.org/" target="_blank"><img src="img/unhosted_logo.png" width="266" height="100" alt="unhosted.org" /></a>
+            <a about="#nick" rel="foaf:Project" class="sockethub" href="http://sockethub.org" target="_blank"><img src="img/sockethub_logo.svg" width="182" height="60" alt="Sockethub"/></a>
+            <a about="#nick" rel="foaf:Project" class="remotestorage" href="http://remotestoragejs.com" target="_blank"><img src="img/remotestoragejs_logo.svg" width="113" height="61" alt="remoteStorage.js"/></a>
           </div>
 
         </section>
       </div>
 
       <aside>
-        <!-- Twitter Feed -->
-        <a class="twitter-timeline" data-dnt="true"
-        href="https://twitter.com/slvrbckt"
-        data-widget-id="301068996936073217">@slvrbckt</a>
-        <script>!function(d,s,id){var
-        js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </script>
-        <!-- /Twitter Feed -->
-
         <!-- github activity -->
         <h3 id="github-commits-header">github activity</h3>
         <div id="github-commits"></div>
