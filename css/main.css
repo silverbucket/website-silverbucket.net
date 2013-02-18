@@ -304,6 +304,9 @@ ul.icon_listing .skype {
 ul.icon_listing .twitter {
     background: url("/img/twitter_16.png") center left no-repeat;
     }
+ul.icon_listing .irc {
+    background: url("/img/irc_16.png") center left no-repeat;
+    }
 ul.icon_listing .email {
     background: url("/img/email_16.png") center left no-repeat;
     }
