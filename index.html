@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Nick Jennings | freelance web development | silverbucket.net</title>
     <meta name="description" content="Nick Jennings | freelance web development | silverbucket.net">
     <meta name="author" content="Nick Jennings">
@@ -30,7 +29,7 @@
     <![endif]-->
   </head>
 
-  <body xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <body rel="foaf:primaryTopic" xmlns:foaf="http://xmlns.com/foaf/0.1/">
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
     <![endif]-->
@@ -39,15 +38,13 @@
 
       <header>
         <div id="logo"></div>
-        <div id="tagline"><h1>professional web application development</h1></div>
-        <div id="link-blog"><a class="button" about="#nkj" rel="foaf:weblog" href="http://blog.silverbucket.net" target="_blank">visit blog</a></div>
+        <div id="tagline"><h1 class="url">https://silverbucket.net</h1></div>
+        <div id="link-blog"><a class="button" about="#nkj" rel="foaf:weblog" href="https://blog.silverbucket.net" target="_blank">visit blog</a></div>
       </header>
 
       <div id="content">
-        <section id="about" rel="foaf:primaryTopic" about="#nkj">
-          <p>My name is <span about="#nkj" property="foaf:name" instanceof="foaf:Person">Nick Jennings</span> and I am a freelance developer.</p>
-
-          <p>I build modern, interactive and standards-compliant websites, provide technical consulting, planning and insight. I specialize in web application development, scalability, systems administration, and project management. I write clean, cross-browser compatible, SEO friendly and standards compliant HTML and CSS.</p>
+        <section id="about" about="#nkj">
+          <p>My name is <span about="#nkj" property="foaf:name" typeof="foaf:Person">Nick Jennings</span>, a freelance developer working primarily with JavaScript, HTML and CSS. I enjoy working on open-source projects, helping to re-decentralize the web and enabling non-techies to acheive some autonomy on the web.</p>
 
         </section>
 
@@ -59,7 +56,7 @@
               </div>
             </div>
           </div>
-          <p>Some of the technologies I handle on a more frequent basis <i>(in alphabetical order)</i></p>
+          <p>Some of the technologies I'm familiar with <i>(in alphabetical order)</i></p>
           <h3>Development</h3>
           <p class="skills">CSS, HTML, JavaScript, JSON, Node.js, NoSQL, Perl, PHP, Python, SQL, WebSockets, XML</p>
           <h3>Systems</h3>
@@ -74,14 +71,14 @@
               </div>
             </div>
           </div>
-          <p>My clients are internet businesses, entrepreneurs or other development teams. If you're in need of someone who can not only develop to spec, fix bugs, or add functionality, but can also help to plan the website architecure or make improvements and suggestions to existing infrastructure, please contact me with information about your project.</p>
+          <p>Sometimes I'm available for consulting projects. My clients are generally internet businesses, entrepreneurs or other development teams. If you're in need of someone who can not only develop to spec, fix bugs, or add functionality, but can also help to plan the website architecure or make improvements and suggestions to existing infrastructure, please contact me with information about your project.</p>
 
           <ul class="icon_listing">
-            <li class="email"><a about="#nkj" alt="email" rel="foaf:mbox" href="mailto:nick@silverbucket.net">nick<p class="a">@</p>silverbucket<p class="a">.</p>net</a></li>
-            <li class="twitter"><a rel="me" alt="twitter" target="_blank" href="http://twitter.com/slvrbckt"><p class="a">@</p>slvrbckt</a></li>
-            <li class="skype"><a rel="me" alt="skype" href="skype:hurphendale?add">hurphendale</a></li>
-            <li class="irc"><a rel="me" alt="irc" target="_blank" href="irc://irc.freenode.net/#sockethub">slvrbckt</a></li>
-            <li class="gpg"><a rel="me" alt="gpg" target="_blank" href="https://silverbucket.net/nick_silverbucketnet_rsa_pub.asc">curl https://silverbucket.net/nick_silverbucketnet_rsa_pub.asc | gpg --import </a></li>
+            <li class="email"><a about="#nkj" rel="foaf:mbox" href="mailto:nick@silverbucket.net">nick<p class="a">@</p>silverbucket<p class="a">.</p>net</a></li>
+            <li class="twitter"><a rel="me" target="_blank" href="http://twitter.com/slvrbckt"><p class="a">@</p>slvrbckt</a></li>
+            <li class="skype"><a rel="me" href="skype:hurphendale?add">hurphendale</a></li>
+            <li class="irc"><a rel="me" target="_blank" href="irc://irc.freenode.net/#sockethub">slvrbckt</a></li>
+            <li class="gpg"><a rel="me" target="_blank" href="https://silverbucket.net/nick_silverbucketnet_rsa_pub.asc">curl https://silverbucket.net/nick_silverbucketnet_rsa_pub.asc | gpg --import </a></li>
             <li class="gpg-fingerprint"><i>GPG Fingerprint:</i> 6A7D 0582 B66F AEFA BEEF  F181 CA3C 5D5F B57A E61C</li>
           </ul>
         </section>
@@ -94,7 +91,7 @@
               </div>
             </div>
           </div>
-          <p>I like to write free software and contribute to open source projects on <a class="github" href="http://github.com/silverbucket" target="_blank"><img src="img/github_icon.png" /></a> <a href="http://github.com/silverbucket" target="_blank">github</a></p>
+          <p>I like to write free software and contribute to open source projects on <a class="github" href="http://github.com/silverbucket" target="_blank"><img alt="github icon" src="img/github_icon.png" /></a> <a href="http://github.com/silverbucket" target="_blank">github</a></p>
 
           <h3>projects I am actively working on</h3>
           <div class="display_icons">
@@ -107,6 +104,7 @@
           <div class="display_icons">
             <a href="http://www.gnome.org/friends/" target="_blank"><img src="http://www-old.gnome.org/friends/banners/friends-of-gnome.png" alt="Become a Friend of GNOME" border="0" /></a> 
             <a href="http://www.gnu.org" target="_blank"><img src="http://www.gnu.org/graphics/gnu-head-sm.jpg" alt="Free Software Foundation" border="0" /></a>
+            <a href="http://www.archlinux.org" target="_blank"><img src="img/archlinux_logo.png" alt="Arch Linux" border="0" /></a>
           </div>
         </section>
       </div>
@@ -120,17 +118,19 @@
 
 
       <footer>
-      	<span about="#nkj" property="foaf:nick" content="silverbucket" />
-      	<span about="#nkj" property="foaf:nick" content="slvrbckt" />
-      	<span about="#nkj" property="foaf:nick" content="hurphendale" />
-      	<span about="#nkj" property="foaf:nick" content="nkj" />
-        <div id="circle1"> &nbsp; </div>
-        <a about="#nkj" rel="foaf:depiction" href="https://silverbucket.net/img/avatar.png" />
-          <div id="circle2"> &nbsp; </div>
-        </a>
-        <a about="#nkj" rel="foaf:homepage" href="https://silverbucket.net" />
-          <div id="circle3"> &nbsp; </div>
-        </a>
+      	<span about="#nkj" property="foaf:nick" content="silverbucket"></span>
+      	<span about="#nkj" property="foaf:nick" content="slvrbckt"></span>
+      	<span about="#nkj" property="foaf:nick" content="hurphendale"></span>
+      	<span about="#nkj" property="foaf:nick" content="nkj"></span>
+        
+        <div id="circle1"> &nbsp; </div> 
+        <div id="circle2"> 
+          <a about="#nkj" rel="foaf:depiction" href="https://silverbucket.net/img/avatar.png"> &nbsp; </a>
+        </div>
+      
+        <div id="circle3"> 
+          <a about="#nkj" rel="foaf:homepage" href="https://silverbucket.net"> &nbsp; </a>
+        </div>
       </footer>
 
     </div>
