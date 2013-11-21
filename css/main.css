@@ -367,6 +367,11 @@ footer {
     margin: 0 0 0 35px;
     width: 910px;
     }
+.footer-credit {
+    color: #808080;
+    font-size: 0.7em; 
+    margin: 0 0 0 3px;
+    }
 #circle1, #circle2, #circle3 {
     width: 15px;
     line-height: .9;
