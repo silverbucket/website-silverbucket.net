@@ -292,6 +292,8 @@ p.a {
     text-decoration: underline;
     font-style: bold;
     font-size: 1.2em;
+    font-weight: 900;
+    color: #555;
 }
 ul.icon_listing {
     margin-top: 10px;
