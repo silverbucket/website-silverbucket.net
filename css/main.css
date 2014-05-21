@@ -321,6 +321,9 @@ ul.icon_listing .irc {
 ul.icon_listing .linkeddata {
     background: url("/img/linkeddata_16.png") center left no-repeat;
     }
+ul.icon_listing .indieweb {
+    background: url("/img/microformat_16.png") center left no-repeat;
+    }
 ul.icon_listing .gpg {
     background: url("/img/gpg_16.png") center left no-repeat;
     }
