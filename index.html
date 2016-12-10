@@ -39,7 +39,6 @@
       <header>
         <div id="logo"></div>
         <div id="tagline"><h1 class="url p-url">https://silverbucket.net</h1></div>
-        <div id="link-blog"><a class="button" about="#nkj" rel="foaf:weblog" href="http://blog.silverbucket.net" target="_blank">visit blog</a></div>
       </header>
 
       <div id="content">
@@ -116,19 +115,20 @@
       </div>
 
       <footer>
-	      <span class="footer-credit">silverbucket logo by <a href="http://canofwaterdesign.net" target="_blank">can of water design</a></span>
       	<span about="#nkj" class="p-nickname hidden" property="foaf:nick" content="silverbucket">silverbucket</span>
       	<span about="#nkj" class="p-nickname hidden" property="foaf:nick" content="slvrbckt">slvrbckt</span>
       	<span about="#nkj" class="p-nickname hidden" property="foaf:nick" content="hurphendale">hurphendale</span>
       	<span about="#nkj" class="p-nickname hidden" property="foaf:nick" content="nkj">nkj</span>
 
-        <div id="circle1"> &nbsp; </div>
+        <div id="circle1">
+          <a about="#nkj" rel="foaf:homepage" href="https://silverbucket.net"> &nbsp; </a>
+        </div>
         <div id="circle2">
           <a about="#nkj" rel="foaf:depiction" class="u-photo" href="https://silverbucket.net/img/avatar.png"> &nbsp; </a>
         </div>
 
         <div id="circle3">
-          <a about="#nkj" rel="foaf:homepage" href="https://silverbucket.net"> &nbsp; </a>
+          <a about="#nkj" rel="foaf:weblog" href="http://blog.silverbucket.net"> &nbsp; </a>
         </div>
       </footer>
 
@@ -137,6 +137,7 @@
     <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
     <script src="js/vendor/github.commits.widget.js?20130212"></script>
+
     <script>
   $(function() {
     $('#github-commits').githubInfoWidget(
