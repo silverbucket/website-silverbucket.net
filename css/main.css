@@ -371,7 +371,7 @@ a:hover {
 
 div.display_icons {
     text-align: center;
-    margin: 10px 100px 0 0;
+    margin-top: 10px;
     }
 div.display_icons a {
     margin: auto 30px auto 30px;
