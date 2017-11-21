@@ -319,7 +319,7 @@ ul.icon_listing .twitter {
 ul.icon_listing .stackoverflow {
     width: 16px;
     height: 16px;
-    background: url("/img/stackoverflow_icon.svg") center left no-repeat;
+    background: url("/img/stackoverflow_16.png") center left no-repeat;
     }
 ul.icon_listing .irc {
     background: url("/img/irc_16.png") center left no-repeat;
