@@ -132,7 +132,7 @@ ul li {
 }
 
 .projects {
-    margin: 2rem 0 2rem 3rem;
+    margin: 2rem 0 2rem 0 !important;
 }
 
 .footer {
@@ -171,7 +171,6 @@ ul li {
 }
 
 
-
 @media only screen and (max-width: 900px) {
     /* Style adjustments for viewports that meet the condition */
     body {
@@ -201,12 +200,12 @@ ul li {
     footer {
         display: none;
     }
-    .projects {
-        margin: 2rem 0 2rem 0;
-    }
-    .project {
-        margin-bottom: 3rem !important;
-    }
+    /*.projects {*/
+    /*    margin: 2rem 0 2rem 0;*/
+    /*}*/
+    /*.project {*/
+    /*    margin-bottom: 3rem !important;*/
+    /*}*/
     .btcaddress {
         font-size: 0.7rem;
     }
