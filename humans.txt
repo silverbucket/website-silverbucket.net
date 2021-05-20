@@ -3,9 +3,9 @@
 
 # TEAM
 
-    Nick Jennings <nick@silverbucket.net> -- developer -- @slvrbckt irc:nkj
+    Nick Jennings <nick@silverbucket.net>
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3, JavaScript
+    JavaScript, HTML, CSS, JavaScript
 
