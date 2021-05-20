@@ -75,9 +75,8 @@ p.skills {
     color: #1589FF;
 }
 
-p.a {
+span.a {
     color: #1589FF;
-    display: inline;
     font-weight: 400;
 }
 a {
