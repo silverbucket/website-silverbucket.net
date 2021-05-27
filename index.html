@@ -176,15 +176,6 @@
 
             <div class="project column is-half-desktop">
               <div>
-                <a about="#me" rel="foaf:Project" href="https://github.com/silverbucket/utf8compare" target="_blank"><span>utf8compare</span></a>
-              </div>
-              <div>
-                <p>Compare 2 UTF8 strings, for easy sorting of different languages</p>
-              </div>
-            </div>
-
-            <div class="project column is-half-desktop">
-              <div>
                 <a about="#me" rel="foaf:Project" href="https://github.com/silverbucket/secure-store-redis" target="_blank"><span>secure-store-redis</span></a>
               </div>
               <div>
@@ -192,7 +183,20 @@
               </div>
             </div>
 
-            <div class="project column is-half-desktop">
+            <div class="project column is-full-desktop">
+              <div><p class="is-size-7"><button onclick="toggle('projects')" class="button is-small">show more</button></p></div>
+            </div>
+
+            <div class="project fold column is-half-desktop">
+              <div>
+                <a about="#me" rel="foaf:Project" href="https://github.com/silverbucket/utf8compare" target="_blank"><span>utf8compare</span></a>
+              </div>
+              <div>
+                <p>Compare 2 UTF8 strings, for easy sorting of different languages</p>
+              </div>
+            </div>
+
+            <div class="project fold column is-half-desktop">
               <div>
                 <a about="#me" rel="foaf:Project" class="jaribu project_logo" href="https://github.com/silverbucket/jaribu" target="_blank"><img width="110" src="res/jaribu_banner.png" alt="Jaribu"/></a>
               </div>
@@ -201,7 +205,7 @@
               </div>
             </div>
 
-            <div class="project column is-half-desktop">
+            <div class="project fold column is-half-desktop">
               <div>
                 <a about="#me" rel="foaf:Project" class="simplexmpp project_logo" href="https://github.com/simple-xmpp/node-simple-xmpp" target="_blank"><img width="65" src="res/simple_xmpp_banner.png" alt="Simple XMPP"/></a>
               </div>
@@ -210,7 +214,7 @@
               </div>
             </div>
 
-            <div class="project column is-half-desktop has-text-centered">
+            <div class="project fold column is-half-desktop has-text-centered">
               <div>
                 <a about="#me" rel="foaf:Project" class="guppyirc project_logo" href="https://github.com/silverbucket/guppy-irc" target="_blank"><img width="120" src="res/guppy_banner.png" alt="Guppy IRC"/></a>
               </div>
@@ -219,7 +223,7 @@
               </div>
             </div>
 
-            <div class="project column is-half-desktop has-text-centered">
+            <div class="project fold column is-half-desktop has-text-centered">
               <div>
                 <a about="#me" rel="foaf:Project" href="https://github.com/namodn/sloth" target="_blank"><span>sloth</span></a>
               </div>
@@ -228,7 +232,7 @@
               </div>
             </div>
 
-            <div class="project column is-half-desktop has-text-centered">
+            <div class="project fold column is-half-desktop has-text-centered">
               <div>
                 <a about="#me" rel="foaf:Project" href="https://github.com/namodn/penemo" target="_blank"><span>penemo</span></a>
               </div>
@@ -237,7 +241,7 @@
               </div>
             </div>
 
-            <div class="project column is-half-desktop has-text-centered">
+            <div class="project fold column is-half-desktop has-text-centered">
               <div>
                 <a about="#me" rel="foaf:Project" href="https://github.com/namodn/pms" target="_blank"><span>PMS</span></a>
               </div>
@@ -246,7 +250,7 @@
               </div>
             </div>
 
-            <div class="project column is-half-desktop has-text-centered">
+            <div class="project fold column is-half-desktop has-text-centered">
               <div>
                 <a about="#me" rel="foaf:Project" href="https://sourceforge.net/projects/sandweb/" target="_blank"><span>SandWeb</span></a>
               </div>
@@ -290,5 +294,24 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript">
+      function toggle(section) {
+        const elems = document.querySelectorAll(`.${section} > .fold`);
+        const button = document.querySelector(`.${section} .button`);
+        elems.forEach((elem) => {
+          if (elem.style.opacity === '1') {
+            elem.style.opacity = '0';
+            elem.style.maxHeight = '0';
+            elem.style.padding = '0';
+            button.innerText = 'show more';
+          } else {
+            elem.style.opacity = '1';
+            elem.style.maxHeight = '15rem';
+            elem.style.padding = '.75rem';
+            button.innerText = 'collapse';
+          }
+        });
+      }
+    </script>
   </body>
 </html>

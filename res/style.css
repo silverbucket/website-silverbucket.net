@@ -21,21 +21,6 @@ h1 {
     padding-bottom: 1rem;
 }
 
-a.button {
-    padding: 5px 8px 5px 8px;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid #1589FF;
-    text-decoration: none;
-    color: #505050;
-}
-a.button:hover {
-    background-color: rgba(21, 137, 255, .1);
-}
-a.button:visited {
-    color: #505050;
-}
-
 .section {
     padding: 1rem;
 }
@@ -134,6 +119,14 @@ ul li {
     margin: 2rem 0 2rem 0 !important;
 }
 
+.fold {
+    transition-duration: 3s;
+    opacity: 0;
+    max-height:0;
+    padding: 0;
+    overflow: hidden;
+}
+
 .footer {
     padding-top: 0;
     padding-right: 0;
@@ -199,12 +192,6 @@ ul li {
     footer {
         display: none;
     }
-    /*.projects {*/
-    /*    margin: 2rem 0 2rem 0;*/
-    /*}*/
-    /*.project {*/
-    /*    margin-bottom: 3rem !important;*/
-    /*}*/
     .btcaddress {
         font-size: 0.7rem;
     }
