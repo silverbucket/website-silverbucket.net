@@ -71,6 +71,9 @@ a {
 a:hover {
     color: #B44003;
 }
+a.long-link {
+    word-break: break-word;
+}
 
 .emphasis {
     text-decoration: underline;
