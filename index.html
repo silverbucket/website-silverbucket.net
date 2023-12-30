@@ -109,10 +109,10 @@
             <li>
               <h3>Open Data</h3>
               <ul>
-                <li>
-                  <span class="list_icon"><i class="list_img linkeddata"></i></span>
-                  <span><a target="_blank" href="http://graphite.ecs.soton.ac.uk/browser/?uri=https%3A%2F%2Fsilverbucket.net">linked data</a> <i>View this page as linked data.</i></span>
-                </li>
+<!--                <li>-->
+<!--                  <span class="list_icon"><i class="list_img linkeddata"></i></span>-->
+<!--                  <span><a target="_blank" href="http://graphite.ecs.soton.ac.uk/browser/?uri=https%3A%2F%2Fsilverbucket.net">linked data</a> <i>View this page as linked data.</i></span>-->
+<!--                </li>-->
                 <li>
                   <span class="list_icon"><i class="list_img indieweb"></i></span>
                   <span class="nudge"><a target="_blank" href="https://indiewebify.me/validate-h-card/?url=https%3A%2F%2Fsilverbucket.net">h-card</a> <i>View this page as an h-card.</i></span>
@@ -131,7 +131,9 @@
 
             <div class="project column is-half-desktop">
               <div>
-                <a about="#me" rel="foaf:Project" class="kosmos project_logo" href="https://kosmos.org" target="_blank"><img width="150" src="res/kosmos_banner_black.svg" alt="Kosmos"/></a>
+                <a about="#me" rel="foaf:Project" class="kosmos project_logo" href="https://kosmos.org" target="_blank">
+                  <img width="150" src="res/kosmos_banner_black.svg" alt="Kosmos"/>
+                </a>
               </div>
               <div>
                 <p>Group communication for the 21st century</p>
@@ -158,10 +160,12 @@
 
             <div class="project column is-half-desktop">
               <div>
-                <a about="#me" rel="foaf:Project" href="https://github.com/silverbucket/node-redis-connection-pool" target="_blank">node-redis-connection-pool</a>
+                <a about="#me" rel="foaf:Project" class="armadietto project_logo" href="https://github.com/remotestorage/armadietto" target="_blank">
+                  <img width="50" src="res/armadietto_logo.svg" alt="armadietto"/>
+                </a>
               </div>
               <div>
-                <p>A node.js connection pooling manager for Redis</p>
+                <p>A Remote Storage server written in Node.js</p>
               </div>
             </div>
 
@@ -184,7 +188,20 @@
             </div>
 
             <div class="project column is-full-desktop">
-              <div><p class="is-size-7"><button onclick="toggle('projects')" class="button is-small">show more</button></p></div>
+              <div>
+                <p class="is-size-7">
+                  <button onclick="toggle('projects')" class="button is-small">deprecated projects...</button>
+                </p>
+              </div>
+            </div>
+
+            <div class="project fold column is-half-desktop">
+              <div>
+                <a about="#me" rel="foaf:Project" href="https://github.com/silverbucket/node-redis-connection-pool" target="_blank">node-redis-connection-pool</a>
+              </div>
+              <div>
+                <p>A Node.js connection pooling manager for Redis</p>
+              </div>
             </div>
 
             <div class="project fold column is-half-desktop">
@@ -264,12 +281,12 @@
           <div class="container">
             <ul>
               <li>
-                <span class="list_icon"><i class="is-size-6 fab fa-bitcoin"></i></span>
+                <span class="list_icon"><i class="is-size-6 fa fa-bitcoin"></i></span>
                 <span class="emphasis btcaddress" rel="https://w3id.org/cc#bitcoin" href="bitcoin:bc1q56c3akjml6c28mrk734m9yc8p46dsmtqj7epz8">bc1q56c3akjml6c28mrk734m9yc8p46dsmtqj7epz8</span>
               </li>
               <li>
-                <span class="list_icon"><i class="is-size-6 fas fa-bolt"></i></span>
-                <span><a target="_blank" href="https://tippin.me/@slvrbckt">https://tippin.me/@slvrbckt</a></span>
+                <span class="list_icon"><i class="is-size-6 fa fa-bolt"></i></span>
+                <span class="emphasis lightningaddress" rel="https://w3id.org/cc#lightning">slvrbckt@kosmos.org</span>
               </li>
             </ul>
           </div>
@@ -303,7 +320,7 @@
             elem.style.opacity = '0';
             elem.style.maxHeight = '0';
             elem.style.padding = '0';
-            button.innerText = 'show more';
+            button.innerText = 'deprecated projects...';
           } else {
             elem.style.opacity = '1';
             elem.style.maxHeight = '15rem';
