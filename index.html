@@ -39,29 +39,22 @@
       <div class="border">
 
         <section id="about" class="section p-note" about="#me">
-          <p>Freelance web development, focusing on open-source projects, helping to re-decentralize the web.</p>
+          <div class="stripe">
+            <h2>About</h2>
+          </div>
+          <p>Hello, my name is Nick Jennings and I am a full-stack web developer with over 20 years of experience.</p>
+          <p>In addition to coding, I’m an active musician with several recorded albums and performances across Europe and the US.</p>
         </section>
 
         <section id="services" class="section">
           <div class="stripe">
-            <h2>Freelance Services</h2>
+            <h2>Freelance</h2>
           </div>
-          <ul class="parent">
+          <p>I currently work full-time, and contribute to open-source projects focused on web decentralization. While not currently accepting commercial freelance work, I remain active in the open-source community.</p>
+          <p>Primary languages and tech. interests lately</p>
+          <ul>
             <li>
-              <h3>Development</h3>
-              <ul>
-                <li>
-                  <p class="skills">CSS, HTML, JavaScript, Node.js, PHP, Python, SQL, TypeScript, WebRTC, WebSockets, XMPP</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h3>Systems</h3>
-              <ul>
-                <li>
-                  <p class="skills">Apache, Docker, BIND, HAProxy, MySQL, MongoDB, nginx, PostgreSQL, Redis</p>
-                </li>
-              </ul>
+            <p class="skills">CSS, HTML, JavaScript (TypeScript), Node.js (Bun, Deno), Go, Python, WebSockets, XMPP, Game Development</p>
             </li>
           </ul>
         </section>
@@ -124,7 +117,7 @@
           <div class="stripe">
             <h2>Open Source</h2>
           </div>
-          <p>I maintain and contribute to a number of open source projects.</p>
+          <p>I maintain and contribute to a number of open source projects. Here's a short list of some of them.</p>
           <div class="projects columns is-desktop is-multiline is-vcentered has-text-centered">
 
             <div class="project column is-half-desktop">
@@ -177,8 +170,7 @@
             <div class="project column is-half-desktop">
               <div>
                 <a about="#me" rel="foaf:Project" class="armadietto project_logo" href="https://github.com/remotestorage/armadietto" target="_blank">
-                  <img width="50" src="res/armadietto_logo.svg" alt="armadietto"/>
-                </a>
+                  <img width="50" src="res/armadietto_logo.svg" alt="armadietto"/> Armadietto</a>
               </div>
               <div>
                 <p>A Remote Storage server written in Node.js</p>
@@ -188,7 +180,7 @@
             <div class="project column is-full-desktop">
               <div>
                 <p class="is-size-7">
-                  <button onclick="toggle('projects')" class="button is-small">older projects...</button>
+                  <button onclick="toggle('projects')" class="button is-small">more</button>
                 </p>
               </div>
             </div>
@@ -261,7 +253,7 @@
           <a about="#me" rel="foaf:depiction" class="u-photo" href="https://silverbucket.net/me.png"> &nbsp; </a>
         </div>
         <div id="circle3" class="circle">
-          <a about="#me" rel="foaf:weblog" href="https://blog.silverbucket.net"> &nbsp; </a>
+          <a about="#me" rel="foaf:weblog"> &nbsp; </a>
         </div>
       </footer>
     </div>
@@ -274,7 +266,7 @@
             elem.style.opacity = '0';
             elem.style.maxHeight = '0';
             elem.style.padding = '0';
-            button.innerText = 'deprecated projects...';
+            button.innerText = 'more';
           } else {
             elem.style.opacity = '1';
             elem.style.maxHeight = '15rem';

@@ -22,7 +22,11 @@ h1 {
 }
 
 .section {
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
 }
 
 div.stripe {
