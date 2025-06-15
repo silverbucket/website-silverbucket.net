@@ -258,6 +258,9 @@
       </footer>
     </div>
     <script type="text/javascript">
+      window.addEventListener('beforeunload', function (e) {
+        navigator.sendBeacon('/logout', { action: 'tab_closed' });
+      });
       function toggle(section) {
         const elems = document.querySelectorAll(`.${section} > .fold`);
         const button = document.querySelector(`.${section} .button`);
