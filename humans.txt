@@ -7,5 +7,5 @@
 
 # TECHNOLOGY COLOPHON
 
-    JavaScript, HTML, CSS, JavaScript
+    HTML, CSS, TypeScript, Go, Python
 
