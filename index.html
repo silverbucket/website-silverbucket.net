@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="foaf: http://xmlns.com/foaf/0.1/ schema: https://schema.org/">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta name="description" content="Nick Jennings — full-stack developer, open-source contributor, and musician based in Prague.">
     <meta name="author" content="Nick Jennings">
     <meta name="keywords" content="Nick Jennings, silverbucket, web developer, open source, Kosmos, Sockethub, remoteStorage, decentralized web, musician, Prague" />
-    <meta property="og:image" content="res/embed.png" />
+    <meta property="og:image" content="https://silverbucket.net/res/embed.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://silverbucket.net" />
     <meta property="og:title" content="Nick Jennings | Developer & Musician | silverbucket.net" />
     <meta property="og:description" content="Full-stack developer, open-source contributor, and musician based in Prague." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Nick Jennings | Developer & Musician" />
+    <meta name="twitter:description" content="Full-stack developer, open-source contributor, and musician based in Prague." />
+    <meta name="twitter:image" content="https://silverbucket.net/res/embed.png" />
     <title>Nick Jennings | Developer & Musician | silverbucket.net</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="image_src" type="image/jpeg" href="res/silverbucket_logo.png" />
@@ -19,53 +23,133 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="res/style.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://silverbucket.net/#me",
+      "name": "Nick Jennings",
+      "alternateName": ["silverbucket", "slvrbckt", "hurphendale"],
+      "url": "https://silverbucket.net",
+      "image": "https://silverbucket.net/me.png",
+      "email": "mailto:nick@silverbucket.net",
+      "jobTitle": "Full-Stack Developer",
+      "description": "Full-stack developer, open-source contributor, and musician based in Prague.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Prague"
+      },
+      "sameAs": [
+        "https://github.com/silverbucket",
+        "https://kosmos.social/@slvrbckt",
+        "https://nickjenningsmusic.com"
+      ],
+      "knowsAbout": ["TypeScript", "Go", "Python", "decentralized web", "open source"],
+      "memberOf": [
+        {
+          "@type": "MusicGroup",
+          "name": "Table Mountain String Band"
+        },
+        {
+          "@type": "MusicGroup",
+          "name": "Death Ponee"
+        },
+        {
+          "@type": "MusicGroup",
+          "name": "The Turpentine Ray"
+        },
+        {
+          "@type": "MusicGroup",
+          "name": "Renegade String Band"
+        },
+        {
+          "@type": "MusicGroup",
+          "name": "Band No. 7"
+        },
+        {
+          "@type": "MusicGroup",
+          "name": "That Old Dream"
+        }
+      ],
+      "makesOffer": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Kosmos",
+          "url": "https://kosmos.org",
+          "description": "Group communication for the 21st century"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Sockethub",
+          "url": "https://sockethub.org",
+          "description": "A protocol gateway for the Web"
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "remoteStorage",
+          "url": "https://remotestorage.io",
+          "description": "An open protocol for per-user storage on the Web"
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "webfinger.js",
+          "url": "https://github.com/silverbucket/webfinger.js",
+          "description": "A JavaScript library for querying WebFinger records"
+        }
+      ]
+    }
+    </script>
   </head>
 
-  <body rel="foaf:primaryTopic" xmlns:foaf="http://xmlns.com/foaf/0.1/">
-    <div class="page h-card">
+  <body>
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <main class="page h-card" about="#me" typeof="foaf:Person" resource="#me">
 
       <!-- Hero -->
       <header class="hero">
-        <img class="hero-avatar u-photo" src="me.png" alt="Nick Jennings" width="72" height="72" />
+        <img class="hero-avatar u-photo" property="foaf:depiction" src="me.png" alt="Photo of Nick Jennings" width="72" height="72" />
         <div class="hero-text">
-          <h1 class="hero-name p-name">Nick Jennings</h1>
-          <p class="hero-tagline"><span class="p-role">Developer</span> <span class="sep">&middot;</span> <span class="p-category">Musician</span> <span class="sep">&middot;</span> <span class="p-locality">Prague</span></p>
+          <h1 class="hero-name p-name" property="foaf:name">Nick Jennings</h1>
+          <p class="hero-tagline"><span class="p-role">Developer</span> <span class="sep" aria-hidden="true">&middot;</span> <span class="p-category">Musician</span> <span class="sep" aria-hidden="true">&middot;</span> <span class="p-locality">Prague</span></p>
         </div>
       </header>
 
       <!-- About -->
-      <section id="about" class="section about p-note" about="#me">
-        <p>I'm a full-stack developer with over twenty years building for the web. These days I work primarily with TypeScript, Go, and Python, and I'm a core contributor to open-source projects focused on decentralization and the open web &mdash; most notably Kosmos, Sockethub, and remoteStorage.</p>
-        <p>Outside of code, I play banjo, fiddle, drums, and various electronic instruments across several bands and solo projects, and I led a documentary series filming musicians in Senegal.</p>
+      <section id="about" class="section about" aria-label="About">
+        <div class="p-note" property="foaf:plan">
+          <p>I'm a full-stack developer with over twenty years building for the web. These days I work primarily with TypeScript, Go, and Python, and I'm a core contributor to open-source projects focused on decentralization and the open web &mdash; most notably Kosmos, Sockethub, and remoteStorage.</p>
+          <p>Outside of code, I play banjo, fiddle, drums, and various electronic instruments across several bands and solo projects, and I led a documentary series filming musicians in Senegal.</p>
+        </div>
       </section>
 
       <!-- Open Source -->
-      <section id="opensource" class="section opensource">
+      <section id="opensource" class="section opensource" aria-label="Open source projects">
         <h2 class="section-heading">Open Source</h2>
 
-        <div class="project-list">
-          <a about="#me" rel="foaf:Project" class="project" href="https://kosmos.org" target="_blank">
+        <div class="project-list" role="list">
+          <a role="listitem" rel="foaf:Project noopener" class="project" href="https://kosmos.org" target="_blank">
             <div class="project-logo">
               <img src="res/kosmos_banner_black.svg" alt="Kosmos" width="140" />
             </div>
             <p class="project-desc">Group communication for the 21st century</p>
           </a>
 
-          <a about="#me" rel="foaf:Project" class="project" href="https://sockethub.org" target="_blank">
+          <a role="listitem" rel="foaf:Project noopener" class="project" href="https://sockethub.org" target="_blank">
             <div class="project-logo">
               <img src="res/sockethub_banner.svg" alt="Sockethub" width="130" />
             </div>
             <p class="project-desc">A protocol gateway for the Web</p>
           </a>
 
-          <a about="#me" rel="foaf:Project" class="project" href="https://remotestorage.io" target="_blank">
+          <a role="listitem" rel="foaf:Project noopener" class="project" href="https://remotestorage.io" target="_blank">
             <div class="project-logo">
               <img src="res/remotestorage_text_logo.png" alt="remoteStorage" width="120" />
             </div>
             <p class="project-desc">An open protocol for per-user storage on the Web</p>
           </a>
 
-          <a about="#me" rel="foaf:Project" class="project" href="https://github.com/silverbucket/webfinger.js" target="_blank">
+          <a role="listitem" rel="foaf:Project noopener" class="project" href="https://github.com/silverbucket/webfinger.js" target="_blank">
             <div class="project-logo">
               <span class="project-name">webfinger.js</span>
             </div>
@@ -74,25 +158,25 @@
         </div>
 
         <h3 class="sub-heading">Apps</h3>
-        <div class="app-grid">
-          <a about="#me" rel="foaf:Project" class="app" href="https://github.com/silverbucket/setlist-roller" target="_blank">
-            <img class="app-icon" src="res/setlist-roller-icon.svg" alt="" width="32" height="32" />
+        <div class="app-grid" role="list">
+          <a role="listitem" rel="foaf:Project noopener" class="app" href="https://github.com/silverbucket/setlist-roller" target="_blank">
+            <img class="app-icon" src="res/setlist-roller-icon.svg" alt="" width="32" height="32" aria-hidden="true" />
             <span class="app-body">
               <span class="app-name">Setlist Roller</span>
               <span class="app-desc">Dice-powered setlist generator that optimizes for smooth gear transitions during live performances</span>
             </span>
           </a>
 
-          <a about="#me" rel="foaf:Project" class="app" href="https://github.com/silverbucket/inbox-rs" target="_blank">
-            <img class="app-icon" src="res/inbox-rs-icon.png" alt="" width="32" height="32" />
+          <a role="listitem" rel="foaf:Project noopener" class="app" href="https://github.com/silverbucket/inbox-rs" target="_blank">
+            <img class="app-icon" src="res/inbox-rs-icon.png" alt="" width="32" height="32" aria-hidden="true" />
             <span class="app-body">
               <span class="app-name">Inbox RS</span>
               <span class="app-desc">A universal inbox for URLs, notes, images, and email &mdash; backed by remoteStorage</span>
             </span>
           </a>
 
-          <a about="#me" rel="foaf:Project" class="app" href="https://github.com/67p/hyperchannel" target="_blank">
-            <img class="app-icon" src="res/hyperchannel-icon.png" alt="" width="32" height="32" />
+          <a role="listitem" rel="foaf:Project noopener" class="app" href="https://github.com/67p/hyperchannel" target="_blank">
+            <img class="app-icon" src="res/hyperchannel-icon.png" alt="" width="32" height="32" aria-hidden="true" />
             <span class="app-body">
               <span class="app-name">Hyperchannel</span>
               <span class="app-desc">Unhosted chat app connecting to XMPP and IRC via Sockethub</span>
@@ -102,24 +186,24 @@
 
         <details class="lib-details">
           <summary>Libraries &amp; tools</summary>
-          <div class="lib-list">
-            <a about="#me" rel="foaf:Project" class="lib" href="https://github.com/silverbucket/ajv-formats-draft2019" target="_blank">
+          <div class="lib-list" role="list">
+            <a role="listitem" rel="foaf:Project noopener" class="lib" href="https://github.com/silverbucket/ajv-formats-draft2019" target="_blank">
               <span class="lib-name">ajv-formats-draft2019</span>
               <span class="lib-desc">JSON Schema Draft 2019 format validators for AJV</span>
             </a>
-            <a about="#me" rel="foaf:Project" class="lib" href="https://github.com/silverbucket/rs-migrate" target="_blank">
+            <a role="listitem" rel="foaf:Project noopener" class="lib" href="https://github.com/silverbucket/rs-migrate" target="_blank">
               <span class="lib-name">rs-migrate</span>
               <span class="lib-desc">Versioned document migrations for remoteStorage apps</span>
             </a>
-            <a about="#me" rel="foaf:Project" class="lib" href="https://github.com/remotestorage/armadietto" target="_blank">
+            <a role="listitem" rel="foaf:Project noopener" class="lib" href="https://github.com/remotestorage/armadietto" target="_blank">
               <span class="lib-name">Armadietto</span>
               <span class="lib-desc">A remoteStorage server written in Node.js</span>
             </a>
-            <a about="#me" rel="foaf:Project" class="lib" href="https://github.com/silverbucket/secure-store-redis" target="_blank">
+            <a role="listitem" rel="foaf:Project noopener" class="lib" href="https://github.com/silverbucket/secure-store-redis" target="_blank">
               <span class="lib-name">secure-store-redis</span>
               <span class="lib-desc">Store and read encrypted data in Redis</span>
             </a>
-            <a about="#me" rel="foaf:Project" class="lib" href="https://github.com/silverbucket/irc-socket-sasl" target="_blank">
+            <a role="listitem" rel="foaf:Project noopener" class="lib" href="https://github.com/silverbucket/irc-socket-sasl" target="_blank">
               <span class="lib-name">irc-socket-sasl</span>
               <span class="lib-desc">IRC socket connections with SSL and SASL authentication</span>
             </a>
@@ -128,64 +212,64 @@
 
         <p class="donate-note">
           Support open-source work
-          <span class="donate-addr" rel="https://w3id.org/cc#bitcoin">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.24 10.56c-.31 1.24-2.24.73-2.88.58l.55-2.18c.64.16 2.67.46 2.33 1.6zM9.34 14.36l-.6 2.41c.77.19 3.03.92 3.4-.45.39-1.4-2.03-1.77-2.8-1.96zm14.46-2.36a10.95 10.95 0 1 1-21.9 0 10.95 10.95 0 0 1 21.9 0zm-5.15-1.27c.1-1.56-1.03-2.4-2.79-2.95l.57-2.27-1.39-.34-.56 2.21c-.37-.09-.74-.17-1.11-.26l.56-2.22-1.39-.35-.57 2.27c-.3-.07-.6-.14-.89-.21l-1.92-.48-.37 1.49s1.03.24 1.01.25c.56.14.66.52.65.81l-.66 2.62c.04.01.09.02.14.04l-.14-.04-.92 3.67c-.07.17-.24.43-.64.33.01.02-1.01-.25-1.01-.25l-.69 1.6 1.82.45c.34.09.67.17 1 .25l-.58 2.3 1.39.35.57-2.28c.38.1.75.2 1.11.28l-.57 2.26 1.39.35.58-2.3c2.38.45 4.17.27 4.92-1.89.61-1.74-.03-2.74-1.28-3.39.91-.21 1.6-.81 1.78-2.05z"/></svg>
+          <span class="donate-addr">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.24 10.56c-.31 1.24-2.24.73-2.88.58l.55-2.18c.64.16 2.67.46 2.33 1.6zM9.34 14.36l-.6 2.41c.77.19 3.03.92 3.4-.45.39-1.4-2.03-1.77-2.8-1.96zm14.46-2.36a10.95 10.95 0 1 1-21.9 0 10.95 10.95 0 0 1 21.9 0zm-5.15-1.27c.1-1.56-1.03-2.4-2.79-2.95l.57-2.27-1.39-.34-.56 2.21c-.37-.09-.74-.17-1.11-.26l.56-2.22-1.39-.35-.57 2.27c-.3-.07-.6-.14-.89-.21l-1.92-.48-.37 1.49s1.03.24 1.01.25c.56.14.66.52.65.81l-.66 2.62c.04.01.09.02.14.04l-.14-.04-.92 3.67c-.07.17-.24.43-.64.33.01.02-1.01-.25-1.01-.25l-.69 1.6 1.82.45c.34.09.67.17 1 .25l-.58 2.3 1.39.35.57-2.28c.38.1.75.2 1.11.28l-.57 2.26 1.39.35.58-2.3c2.38.45 4.17.27 4.92-1.89.61-1.74-.03-2.74-1.28-3.39.91-.21 1.6-.81 1.78-2.05z"/></svg>
             bc1q56c3akjml6c28mrk734m9yc8p46dsmtqj7epz8
           </span>
-          <span class="donate-addr" rel="https://w3id.org/cc#lightning">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <span class="donate-addr">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
             slvrbckt@kosmos.org
           </span>
         </p>
       </section>
 
       <!-- Music & Film -->
-      <section id="music-film" class="section music-film">
+      <section id="music-film" class="section music-film" aria-label="Music and film">
         <h2 class="section-heading section-heading--teal">Music &amp; Film</h2>
         <p class="section-blurb">Music has been part of my life since I was young &mdash; old-time, punk, electronic, and plenty in between. These days I play in a handful of projects around Prague and beyond, and record solo electronic stuff as Hurphendale. In 2019 a trip to Senegal turned into a documentary project that I'm still working on.</p>
 
-        <a href="https://nickjenningsmusic.com" rel="me" target="_blank" class="featured-link">
-          <svg class="featured-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        <a href="https://nickjenningsmusic.com" rel="me noopener" target="_blank" class="featured-link">
+          <svg class="featured-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
           <span class="featured-link-body">
             <span class="featured-link-title">nickjenningsmusic.com</span>
             <span class="featured-link-desc">All music projects, recordings, and bands</span>
           </span>
-          <svg class="featured-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          <svg class="featured-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
         </a>
 
-        <div class="band-tags">
-          <span class="band-tag">Table Mountain String Band</span>
-          <span class="band-tag">Hurphendale</span>
-          <span class="band-tag">Death Ponee</span>
-          <span class="band-tag">The Turpentine Ray</span>
-          <span class="band-tag">Renegade String Band</span>
-          <span class="band-tag">Band No. 7</span>
-          <span class="band-tag">That Old Dream</span>
-        </div>
+        <ul class="band-tags" aria-label="Bands and projects">
+          <li class="band-tag">Table Mountain String Band</li>
+          <li class="band-tag">Hurphendale</li>
+          <li class="band-tag">Death Ponee</li>
+          <li class="band-tag">The Turpentine Ray</li>
+          <li class="band-tag">Renegade String Band</li>
+          <li class="band-tag">Band No. 7</li>
+          <li class="band-tag">That Old Dream</li>
+        </ul>
         <p class="instruments">Banjo, fiddle, drums, bass, guitar, synths, modular, electronics</p>
 
         <h3 class="sub-heading sub-heading--teal">Documentary</h3>
-        <a about="#me" rel="foaf:Project" href="https://musicofsenegal.com" target="_blank" class="featured-link">
-          <img class="featured-link-icon" src="res/musicofsenegal-favicon.ico" alt="" width="28" height="28" />
+        <a rel="foaf:Project noopener" href="https://musicofsenegal.com" target="_blank" class="featured-link">
+          <img class="featured-link-icon" src="res/musicofsenegal-favicon.ico" alt="" width="28" height="28" aria-hidden="true" />
           <span class="featured-link-body">
             <span class="featured-link-title">Music of Senegal</span>
             <span class="featured-link-desc">A series of short documentaries showcasing musicians throughout Senegal. I initiated, coordinated, and filmed this project starting in 2019, and I'm the sole editor of the series.</span>
           </span>
-          <svg class="featured-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          <svg class="featured-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
         </a>
       </section>
 
       <!-- Contact -->
-      <section id="contact" class="section contact">
+      <section id="contact" class="section contact" aria-label="Contact">
         <h2 class="section-heading">Contact</h2>
         <ul class="contact-list">
           <li>
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
             <div>
-              <a about="#me" rel="me foaf:mbox" class="u-email" href="mailto:nick@silverbucket.net">nick@silverbucket.net<span class="contact-label">via email</span></a>
+              <a rel="me foaf:mbox" class="u-email" href="mailto:nick@silverbucket.net" property="foaf:mbox" resource="mailto:nick@silverbucket.net">nick@silverbucket.net<span class="contact-label">via email</span></a>
               <div class="contact-meta">
-                <a class="u-key gpg-link" href="https://silverbucket.net/nick_silverbucketnet_rsa_pub.asc" target="_blank">
-                  <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <a class="u-key gpg-link" href="https://silverbucket.net/nick_silverbucketnet_rsa_pub.asc" target="_blank" rel="noopener">
+                  <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                   GPG key
                 </a>
                 <span class="fingerprint">6A7D 0582 B66F AEFA BEEF F181 CA3C 5D5F B57A E61C</span>
@@ -193,33 +277,30 @@
             </div>
           </li>
           <li>
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
-            <a about="#me" rel="me foaf:account" href="https://github.com/silverbucket" target="_blank">silverbucket<span class="contact-label">on GitHub</span></a>
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            <a rel="me foaf:account noopener" href="https://github.com/silverbucket" target="_blank">silverbucket<span class="contact-label">on GitHub</span></a>
           </li>
           <li>
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.547c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054 19.648 19.648 0 0 0 4.636.536c.374 0 .748 0 1.125-.015 1.87-.066 3.847-.178 5.651-.646.045-.012.09-.025.132-.04 2.527-.635 4.912-2.613 5.154-7.66.01-.195.044-2.049.044-2.25.002-.664.2-4.207-.033-6.433z"/><path d="M19.903 8.084v6.745h-2.673V8.298c0-1.378-.58-2.078-1.74-2.078-1.283 0-1.925.83-1.925 2.473v3.578h-2.658V8.693c0-1.643-.641-2.473-1.925-2.473-1.16 0-1.74.7-1.74 2.078v6.531H4.57V8.084c0-1.378.352-2.473 1.058-3.283.728-.81 1.682-1.225 2.864-1.225 1.368 0 2.404.525 3.084 1.575l.664 1.114.664-1.114c.68-1.05 1.716-1.575 3.084-1.575 1.182 0 2.136.415 2.864 1.225.706.81 1.058 1.905 1.058 3.283z"/></svg>
-            <a about="#me" rel="me foaf:account" href="https://kosmos.social/@slvrbckt" target="_blank">@slvrbckt<span class="contact-label">on Mastodon</span></a>
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.547c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054 19.648 19.648 0 0 0 4.636.536c.374 0 .748 0 1.125-.015 1.87-.066 3.847-.178 5.651-.646.045-.012.09-.025.132-.04 2.527-.635 4.912-2.613 5.154-7.66.01-.195.044-2.049.044-2.25.002-.664.2-4.207-.033-6.433z"/><path d="M19.903 8.084v6.745h-2.673V8.298c0-1.378-.58-2.078-1.74-2.078-1.283 0-1.925.83-1.925 2.473v3.578h-2.658V8.693c0-1.643-.641-2.473-1.925-2.473-1.16 0-1.74.7-1.74 2.078v6.531H4.57V8.084c0-1.378.352-2.473 1.058-3.283.728-.81 1.682-1.225 2.864-1.225 1.368 0 2.404.525 3.084 1.575l.664 1.114.664-1.114c.68-1.05 1.716-1.575 3.084-1.575 1.182 0 2.136.415 2.864 1.225.706.81 1.058 1.905 1.058 3.283z"/></svg>
+            <a rel="me foaf:account noopener" href="https://kosmos.social/@slvrbckt" target="_blank">@slvrbckt<span class="contact-label">on Mastodon</span></a>
           </li>
           <li>
-            <!-- IndieWeb/microformats logo -->
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
-            <a target="_blank" href="https://indiewebify.me/validate-h-card/?url=https%3A%2F%2Fsilverbucket.net">h-card<span class="contact-label">view structured data</span></a>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+            <a target="_blank" rel="noopener" href="https://indiewebify.me/validate-h-card/?url=https%3A%2F%2Fsilverbucket.net">h-card<span class="contact-label">view structured data</span></a>
           </li>
         </ul>
       </section>
 
       <!-- Footer -->
       <footer class="footer">
-        <span about="#me" class="hidden" property="foaf:name" typeof="foaf:Person">Nick Jennings</span>
-        <span about="#me" class="p-nickname hidden" property="foaf:nick" content="silverbucket">silverbucket</span>
-        <span about="#me" class="p-nickname hidden" property="foaf:nick" content="slvrbckt">slvrbckt</span>
-        <span about="#me" class="p-nickname hidden" property="foaf:nick" content="hurphendale">hurphendale</span>
-        <span about="#me" class="p-nickname hidden" property="foaf:nick" content="nkj">nkj</span>
-        <a about="#me" rel="foaf:homepage" class="u-url hidden" href="https://silverbucket.net"></a>
-        <a about="#me" rel="foaf:depiction" class="u-photo hidden" href="https://silverbucket.net/me.png"></a>
+        <span class="hidden" property="foaf:nick" content="silverbucket"><span class="p-nickname">silverbucket</span></span>
+        <span class="hidden" property="foaf:nick" content="slvrbckt"><span class="p-nickname">slvrbckt</span></span>
+        <span class="hidden" property="foaf:nick" content="hurphendale"><span class="p-nickname">hurphendale</span></span>
+        <span class="hidden" property="foaf:nick" content="nkj"><span class="p-nickname">nkj</span></span>
+        <a rel="foaf:homepage" class="u-url hidden" href="https://silverbucket.net"></a>
         <p class="colophon">silverbucket.net</p>
       </footer>
 
-    </div>
+    </main>
   </body>
 </html>

@@ -76,6 +76,26 @@ a:hover { color: var(--accent-hover); }
   color: var(--text);
 }
 
+/* === Skip Link === */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--s-md);
+  padding: var(--s-sm) var(--s-md);
+  background: var(--text);
+  color: var(--bg);
+  border-radius: 0 0 6px 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  z-index: 100;
+  transition: top var(--duration-fast) var(--ease-out);
+}
+
+.skip-link:focus {
+  top: 0;
+  color: var(--bg);
+}
+
 ul, ol { list-style: none; }
 p { margin-bottom: 1.25em; }
 p:last-child { margin-bottom: 0; }
@@ -467,6 +487,7 @@ p:last-child { margin-bottom: 0; }
   flex-wrap: wrap;
   gap: var(--s-sm);
   margin: var(--s-md) 0 var(--s-sm);
+  list-style: none;
 }
 
 .band-tag {
