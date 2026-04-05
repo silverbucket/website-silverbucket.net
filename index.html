@@ -16,8 +16,7 @@
     <meta name="twitter:description" content="Full-stack developer, open-source contributor, and musician based in Prague." />
     <meta name="twitter:image" content="https://silverbucket.net/res/embed.png" />
     <title>Nick Jennings | Developer & Musician | silverbucket.net</title>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="image_src" type="image/jpeg" href="res/silverbucket_logo.png" />
+    <link rel="icon" type="image/svg+xml" href="res/favicon.svg" />
     <link rel="canonical" href="https://silverbucket.net/" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -110,15 +109,22 @@
       <header class="hero">
         <img class="hero-avatar u-photo" property="foaf:depiction" src="me.png" alt="Photo of Nick Jennings" width="72" height="72" />
         <div class="hero-text">
-          <h1 class="hero-name p-name" property="foaf:name">Nick Jennings</h1>
-          <p class="hero-tagline"><span class="p-role">Developer</span> <span class="sep" aria-hidden="true">&middot;</span> <span class="p-category">Musician</span> <span class="sep" aria-hidden="true">&middot;</span> <span class="p-locality">Prague</span></p>
+          <h1 class="hero-name">
+            <svg class="logo-mark" viewBox="0 6 220 40" role="img" aria-label="silverbucket">
+              <title>silverbucket</title>
+              <text x="4" y="40" font-family="'JetBrains Mono', 'Menlo', monospace" font-size="34" font-weight="400" fill="var(--accent)">&gt;</text>
+              <text x="28" y="40" font-family="'JetBrains Mono', 'Menlo', monospace" font-size="34" font-weight="500" fill="var(--text)" letter-spacing="1">slvrbckt</text>
+              <rect class="logo-cursor" x="202" y="37" width="14" height="3" rx="1" fill="var(--accent)"/>
+            </svg>
+            <span class="visually-hidden">silverbucket</span>
+          </h1>
         </div>
       </header>
 
       <!-- About -->
       <section id="about" class="section about" aria-label="About">
         <div class="p-note" property="foaf:plan">
-          <p>I'm a full-stack developer with over twenty years building for the web. These days I work primarily with TypeScript, Go, and Python, and I'm a core contributor to open-source projects focused on decentralization and the open web &mdash; most notably Kosmos, Sockethub, and remoteStorage.</p>
+          <p>I'm <span class="p-name" property="foaf:name">Nick Jennings</span>, a full-stack developer with over twenty years building for the web, and a core contributor to open-source projects focused on decentralization and the open web &mdash; most notably Kosmos, Sockethub, and remoteStorage.</p>
           <p>Outside of code, I play banjo, fiddle, drums, and various electronic instruments across several bands and solo projects, and I led a documentary series filming musicians in Senegal.</p>
         </div>
       </section>
