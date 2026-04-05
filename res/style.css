@@ -137,12 +137,8 @@ p:last-child { margin-bottom: 0; }
   display: block;
 }
 
-.hero-logo-img {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+.logo-cursor {
+  animation: blink 1.2s ease-in-out infinite;
 }
 
 .visually-hidden {
@@ -578,6 +574,11 @@ p:last-child { margin-bottom: 0; }
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.9; }
+  50%      { opacity: 0; }
 }
 
 /* === Reduced Motion === */
