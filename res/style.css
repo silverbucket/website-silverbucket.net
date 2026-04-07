@@ -359,24 +359,57 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* === Donate === */
-.donate-note {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  margin-top: var(--s-xl);
-  padding-top: var(--s-md);
-  border-top: 1px solid var(--border);
+
+.donate-methods {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-sm);
 }
 
 .donate-addr {
   display: flex;
   align-items: center;
-  gap: var(--s-sm);
+  gap: var(--s-md);
+}
+
+.donate-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.donate-icon--btc {
+  fill: oklch(62% 0.16 55);
+  background: oklch(62% 0.16 55 / 0.12);
+}
+
+.donate-icon--ln {
+  fill: oklch(60% 0.18 85);
+  background: oklch(60% 0.18 85 / 0.12);
+}
+
+.donate-addr-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.donate-label {
+  font-family: var(--body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.donate-value {
   font-family: var(--mono);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: var(--text-secondary);
   word-break: break-all;
-  margin-top: var(--s-xs);
-  opacity: 0.7;
+  line-height: 1.4;
 }
 
 /* === Music & Film — distinct atmosphere === */
