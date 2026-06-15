@@ -357,5 +357,30 @@
       </footer>
 
     </main>
+    <!-- Donation interaction tracking (Matomo events) -->
+    <script>
+      (function () {
+        var section = document.querySelector('.donate-section');
+        if (!section) return;
+        window._paq = window._paq || [];
+        section.addEventListener('click', function (e) {
+          var addr = e.target.closest('.donate-addr');
+          if (!addr) return;
+          var label = addr.querySelector('.donate-label');
+          _paq.push(['trackEvent', 'Donate', 'Address Click', label ? label.textContent.trim() : 'Unknown']);
+        });
+        document.addEventListener('copy', function () {
+          var sel = (window.getSelection ? String(window.getSelection()) : '').trim();
+          if (!sel) return;
+          var match = [].slice.call(section.querySelectorAll('.donate-addr')).find(function (a) {
+            var v = a.querySelector('.donate-value');
+            return v && v.textContent.trim() === sel;
+          });
+          if (!match) return;
+          var label = match.querySelector('.donate-label');
+          _paq.push(['trackEvent', 'Donate', 'Copy Address', label ? label.textContent.trim() : 'Unknown']);
+        });
+      })();
+    </script>
   </body>
 </html>
