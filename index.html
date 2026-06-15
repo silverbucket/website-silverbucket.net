@@ -24,10 +24,8 @@
     <meta name="twitter:image:alt" content="silverbucket.net — Nick Jennings, full-stack developer, open source." />
     <title>Nick Jennings | silverbucket.net</title>
     <link rel="icon" type="image/svg+xml" href="res/favicon.svg" />
-    <link rel="canonical" href="https://silverbucket.net/" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://silverbucket.net/" /> <!-- nosemgrep: canonical link loads no resource; SRI is invalid on rel="canonical" -->
+    <link rel="stylesheet" href="res/fonts.css" />
     <link rel="stylesheet" href="res/style.css" />
     <script type="application/ld+json">
     {
@@ -215,6 +213,17 @@
             </span>
           </a>
 
+        </div>
+
+        <h3 class="sub-heading">CLI Tools</h3>
+        <div class="app-grid" role="list">
+          <a role="listitem" rel="foaf:Project noopener" class="app" href="https://github.com/silverbucket/dwatch" target="_blank">
+            <img class="app-icon" src="res/dwatch-icon.svg" alt="" width="32" height="32" aria-hidden="true" />
+            <span class="app-body">
+              <span class="app-name">dwatch</span>
+              <span class="app-desc">Command-line tool that tracks disk space growth over time with periodic directory snapshots</span>
+            </span>
+          </a>
         </div>
 
         <h3 class="sub-heading">Browser Extensions</h3>

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="dwatch">
+  <title>dwatch — terminal growth</title>
+  <defs>
+    <linearGradient id="aBar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#c0563a"/>
+      <stop offset="100%" stop-color="#e78a4f"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#221f1c"/>
+  <!-- prompt caret -->
+  <path d="M14 16 l6 5 -6 5" fill="none" stroke="#e78a4f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="24" y="24" width="11" height="3" rx="1.5" fill="#6f6a64"/>
+  <!-- ascending bars -->
+  <rect x="14" y="42" width="7" height="8"  rx="2" fill="url(#aBar)"/>
+  <rect x="25" y="37" width="7" height="13" rx="2" fill="url(#aBar)"/>
+  <rect x="36" y="31" width="7" height="19" rx="2" fill="url(#aBar)"/>
+  <rect x="47" y="24" width="7" height="26" rx="2" fill="url(#aBar)"/>
+</svg>
