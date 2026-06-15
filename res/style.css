@@ -138,7 +138,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .logo-cursor {
-  animation: blink 1.2s ease-in-out infinite;
+  animation: blink 1.06s step-end infinite;
 }
 
 .visually-hidden {
@@ -610,8 +610,9 @@ p:last-child { margin-bottom: 0; }
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 0.9; }
-  50%      { opacity: 0; }
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* === Reduced Motion === */
@@ -621,6 +622,11 @@ p:last-child { margin-bottom: 0; }
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+  /* A two-state cursor blink isn't a vestibular-motion trigger, so keep it
+     running even under reduced motion — it's core to the terminal aesthetic. */
+  .logo-cursor {
+    animation: blink 1.06s step-end infinite !important;
   }
 }
 
